@@ -1,0 +1,59 @@
+[
+  {
+    "hash": "be08d5a5d6bfd78802475a289d3de7862f9aa64e",
+    "createdAt": "2023-11-07T06:42:34.550Z",
+    "results": [
+      {
+        "name": "Install dependencies",
+        "count": 3,
+        "command": "cd project && npm install --force",
+        "mean": 4.386589934966667,
+        "stddev": 0.3554366337676999,
+        "median": 4.211730817299999,
+        "user": 4.689907799999999,
+        "system": 0.8466729133333334,
+        "min": 4.1524554763,
+        "max": 4.795583511299999,
+        "exit_codes": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "name": "Vite - Node [DEV]",
+        "count": 3,
+        "command": "cd project && node benchmarker.js",
+        "mean": 0.9054969945800001,
+        "stddev": 0.30010303837480884,
+        "median": 0.73951991358,
+        "user": 0.7723899466666667,
+        "system": 0.10799492,
+        "min": 0.7250457125800001,
+        "max": 1.2519253575800002,
+        "exit_codes": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "name": "Vite - Node [PROD]",
+        "count": 3,
+        "command": "cd project && npm run build -- --force",
+        "mean": 1.7757836088733334,
+        "stddev": 0.016941617660462267,
+        "median": 1.7750296845400002,
+        "user": 2.1830967866666664,
+        "system": 0.14894522666666665,
+        "min": 1.75923153954,
+        "max": 1.79308960254,
+        "exit_codes": [
+          0,
+          0,
+          0
+        ]
+      }
+    ]
+  }
+]
