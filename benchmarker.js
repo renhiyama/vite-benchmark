@@ -23,8 +23,7 @@ const benchmarker = async () => {
     });
   });
   //make a request to the server
-  let res = await fetch('http://localhost:3000');
-  console.log(await res.text())
+  await fetch('http://localhost:3000');
   //kill the vite process and return
   viteProcess.kill();
   const endTime = Date.now();
