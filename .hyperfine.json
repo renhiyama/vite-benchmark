@@ -10,6 +10,16 @@
     }
   },
   {
+    "name": "Vite - Node [DEV]",
+    "command": "cd project && node benchmarker.js",
+    "extraArgs": {
+      "warmup": 1,
+      "runs": 3,
+      "prepare": "rm -rf project && npm --yes create vite@latest project -- --template react && cd project && npm install && cp ../benchmarker.js .",
+      "cleanup": "rm -rf project"
+    }
+  },
+  {
     "name": "Vite - Node [PROD]",
     "command": "cd project && npm run build -- --force",
     "extraArgs": {
